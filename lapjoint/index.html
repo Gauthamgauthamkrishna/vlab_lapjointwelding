@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        var simsubscreennum=0;
+        var temp=0;
+    </script>
+</head>
+<!--Simulation Screen start		-->
+<div id="simscreen">
+
+    <!--Title of Simulation		-->
+    <div id="title"><h3>ARC WELDING(LAP JOINT)</h3></div>
+
+    <!--SubScreen Home	-->
+    <div class="simsubscreen" id="canvas0">
+    <h4 id="objective" style="font-family:verdana; ">Objective:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:15px;">To Prepare a lap joint using arc welding process.</p></br>
+    <h4 id="apparatus" style="font-family:verdana; ">Apparatus used:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:14px;">Wire Brush, Grinding Machine, Protective Equipments, Welding Transformer, Electrodes, Tong, Chipping Hammer, Mild steel flat of 60x45x10mm etc.</p>
+    <img id="" style="position: absolute; left: 350px; top: 285px; width:400px;" title="Welding Machine" src="Images/machine.png"/>
+    <img id="" style="position:absolute; left:300px; top:260px; width:250px" title="Welding Helmet" src="Images/face.png" />
+    <img id="" style="position:absolute; left:390px; top:330px; width:250px" title="Gloves" src="Images/gloves.png" />
+    <img id="" style="position:absolute; left:5px; top:340px; width:250px" title="Workpiece" src="Images/metal.png" />
+    <img id="" style="position:absolute; left:5px; top:300px; width:250px" title="Workpiece" src="Images/metal.png" />
+    <img id="" style="position:absolute; left:220px;top:375px;width:150px;" title="grinder" src="./images/grinder.png" />
+    <img id="" style="position:absolute; left:200px;top:255px;width:200px;" title="Chipping Hammer" src="./images/hammer.png" />
+    <!-- <img id="" style="position:absolute; left:5px; top:340px; width:250px" title="sand" src="Images/metal.png" /> -->
+
+
+    <!-- <img id="" style="position:absolute; left:250px;top:250px;" title="sand" src="./images/box.png" /> -->
+    </div>
+
+    <!--Step1	-->
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+    <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"> <strong id="titlestep" class="incanvas">STEP </strong>
+    <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>Clean the given workpiece thoroughly, i.e. remove the rust, scales and file the edges.</p>
+    <img id="Workpiece" style="position:absolute; left:10px;top:250px;width:450px;" title="Workpiece" src="./images/metal.png" />
+    <img id="grinder" style="position:absolute; left:450px;top:355px;width:250px;" title="grinder" src="./images/grinder.png" />
+    <img id="brush" style="position:absolute; left:430px;top:185px;width:350px;visibility:hidden;" title=" brush" src="./images/brush.png" />
+    </div>
+
+    <!--Step2	-->
+      <div class="simsubscreen" id="canvas2" style="visibility:hidden">
+      <p id="pumptext" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+      <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>&nbsp;Position the matal workpieces to form a lap joint.</p>
+      <img id="w2" style="position:absolute; left:30px;top:270px;width:350px;" title="workpiece1" src="./images/metal.png" />
+      <img id="w1" style="position:absolute; left:430px;top:270px;width:350px;" title="workpiece2" src="./images/metal.png" />
+      <img id="lj" style="position:absolute; left:200px;top:270px;width:400px;visibility:hidden;" title="lapjoint" src="./images/metal2.png" />
+      </div>
+
+
+      <!--Step3	-->
+      <div class="simsubscreen" id="canvas3" style="visibility:hidden">
+      <p id="pumptext" class="steptext incanvas" style="font-family:verdana; font-size:14px;">
+          <strong id="titlestep" class="incanvas">STEP </strong>
+          <span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
+           Adjust the current in machine .</p>
+           <img id="mac" style="position:absolute; left:330px;top:270px;width:350px;" title="machine" src="./images/machine.png" />
+
+          <img id="knob" style="position:absolute; left:121px;top:210px;width:200px;visibility:hidden;" title="dial" src="./images/knob.png" />
+           <img id="dial" style="position:absolute; left:450px;top:150px;width:53px;visibility:hidden;" title="dial" src="./images/dial.png" />
+
+      </div>
+
+    <!--Step4	-->
+    <div class="simsubscreen" id="canvas4" style="visibility:hidden">
+    <p id="pumptext-2" class="steptext" style="font-family:verdana; font-size:14px;"><strong id="titlestep" class="incanvas">STEP</strong>
+    <span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>&nbsp; Strike the arc and move the electrode to the other end uniformly.</p>
+
+    <img id="" style="position:absolute; left:10px;top:265px;width:450px;" title="Workpiece" src="./images/metal2.png" />
+    <img id="spark" style="position:absolute; left:100px;top:365px;width:150px;visibility:hidden;"  src="./images/spark.png" />
+    <img id="weld" style="position:absolute; left:220px;top:85px;width:450px;"  src="./images/weld.png" />
+    <img id="" style="position:absolute; left:220px;top:85px;width:450px;"  src="./images/blank.png" />
+    <img id="dust1" style="position:absolute; left:10px;top:268px;width:450px"  src="./images/dust.png" />
+    <img id="electrode" style="position:absolute; left:450px;top:295px;width:450px;" title="Electrode" src="./images/electrode.png" />
+
+    </div>
+
+
+
+    <!--Step5-->
+    <div class="simsubscreen" id="canvas5" style="visibility:hidden">
+    <p id="pumptext" class="steptext incanvas" style="font-family:verdana; font-size:14px;">
+    <strong id="titlestep" class="incanvas">STEP </strong>
+    <span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span>Chip off the scale formed using a chipping hammer.</p>
+    <img id="" style="position:absolute; left:10px;top:265px;width:450px;" title="Workpiece" src="./images/metal3.png" />
+    <img id="dust" style="position:absolute; left:10px;top:268px;width:450px;"  src="./images/dust.png" />
+    <img id="hammer" style="position:absolute; left:400px;top:255px;width:350px;" title="Chipping Hammer" src="./images/hammer.png" />
+    </div>
+
+
+    <!--Step6	-->
+    <div class="simsubscreen" id="canvas6" style="visibility:hidden">
+    <!-- <p class="steptext" style="font-family:verdana; font-size:14px;">&nbsp;Repeat the same procedure for further trials.</p> -->
+    <strong class="incanvas" style="position:absolute;top: 40px; left:50px; font-family:verdana;" ><h3>Observation</h3></strong>
+
+    </div>
+
+
+
+
+    <!--Trial text	-->
+    <div id="">
+    <p id="trial" style="text-transform: uppercase;visibility :hidden;font-weight: bold;font-family:verdana; "><strong>Trial = </strong></p>
+    </div>
+
+
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="Images/Next.png" />
+    </div>
+
+    <!--Blinking Arrow	-->
+    <img class ="" id="arrow1" style="visibility:hidden" src="Images/arrow1.png"/>
+
+    <div id="copyright"> &copy; 2020 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+    <script src="./js/sample.js"></script>
+    </body>
+    </html>

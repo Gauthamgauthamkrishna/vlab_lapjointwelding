@@ -1,0 +1,468 @@
+html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+#simscreen
+{
+    position: relative;
+    left:0px;
+    top:0px;
+    height: 600px;
+    width:800px;
+    background-image: url("../images/background.png");
+}
+
+#copyright{
+position: absolute;
+left:50px;
+top: 585px;
+font-family: verdana;
+font-size:12px
+}
+
+#title{
+position:relative;
+left:50px;
+top:25px;
+height:40px;
+font-size: 24px;
+text-align:center;
+/* background-color: black; */
+font-family: 'Times New Roman', Times, serif;
+/* color: White; */
+text-transform: uppercase;
+}
+
+#title h3{
+padding-top:2px;
+margin:0px;
+}
+
+#objective{
+    /* t r b l */
+    padding: 5px 0 2px 0;
+    margin: 35px 0 0 0;
+}
+
+#apparatus{
+    /* t r b l */
+    padding: 5px 0 2px 0;
+    margin: 5px 0 0 0;
+}
+#question-div{
+	position: absolute;
+	left:300px;
+	top:350px;
+	width:300px;
+	height:120px;
+	border:solid 1px gray;
+	background-color: gray;
+	filter: alpha(opacity=55);
+	color:white;
+	visibility:hidden;
+}
+
+.simsubscreen
+{
+position:absolute;
+left: 50px;
+top: 50px;
+height:530px;
+width:745px;
+
+
+}
+
+.incanvas
+{
+margin:5px 0 0 5px;
+}
+#nextButton{
+    position: absolute;
+    left: 740px;
+    top: 520px;
+    cursor:pointer;
+}
+#nextButton1{
+    position: absolute;
+    left: 750px;
+    top: 530px;
+cursor:pointer;
+}
+
+#prevButton{
+    position: absolute;
+    left: 0px;
+    top: 532px;
+    cursor:pointer;
+}
+
+
+.steptext{
+    display:inline;
+    position: absolute;
+    top: 40px;
+}
+
+.steptext-6{
+display:inline;}
+
+.steptext-2{display:inline;}
+
+.circlebg
+{
+border-radius:100%;
+font-size:25px;
+color:#fff;
+text-align:center;
+background:#000
+}
+
+
+
+/* -------------------------------------- water ---------------------------------------- */
+/* Chrome, Safari, Opera */
+
+/* @-webkit-keyframes water-4 {
+0% {-webkit-transform: translate(0, 0 );}
+100% {-webkit-transform: translate(0, -20px );}
+}
+
+/* Standard syntax */
+@keyframes moveelectrode {
+    0%{left:260px;top:68px;}
+    50%{left:30px;top:265px;}
+	100% {left:450px;top:295px;}
+}
+
+@-webkit-keyframes moveelectrode {
+  0%{left:260px;top:68px;}
+  50%{left:30px;top:265px;}
+100% {left:450px;top:295px;}
+}
+
+@keyframes moveSand {
+    0% {
+        left:100px;top:220px;
+        transform: rotate(0deg);
+    }
+    50%{
+        left:250px;top:120px;
+        transform: rotate(0deg);
+    }
+    100%{
+        left:250px;top:120px;
+        transform: rotate(80deg);
+    }
+}
+
+@-webkit-keyframes moveSand{
+    0% {
+        left:100px;top:220px;
+        transform: rotate(0deg);
+    }
+    50%{
+        left:250px;top:120px;
+        transform: rotate(0deg);
+    }
+    100%{
+        left:250px;top:120px;
+        transform: rotate(80deg);
+    }
+}
+
+
+@keyframes movespark
+{
+  from {left:310px;top:230px;}
+	to {left:100px;top:405px;visibility: hidden;}
+}
+@-webkit-keyframes movespark
+{
+  from {left:310px;top:230px;}
+	to {left:100px;top:405px;visibility: hidden;}
+}
+@keyframes movew2 {
+    0% {left:30px;top:270px;}
+    100%{left:230px;top:270px;}
+}
+
+@-webkit-keyframes movew2{
+
+     0% {left:30px;top:270px;}
+     100%{left:230px;top:270px;}
+ }
+ @keyframes movew1 {
+     0% {left:430px;top:270px;}
+     100%{left:230px;top:270px;}
+ }
+
+ @-webkit-keyframes movew1
+   {
+      0% {left:430px;top:270px;}
+      100%{left:230px;top:270px;}
+  }
+@keyframes movebrush {
+    0% {left:10px;top:350px;}
+    50%{left:200px;top:150px;}
+    100%{left:10px;top:350px;}
+}
+
+@-webkit-keyframes movebrush{
+  0% {left:100px;top:350px;}
+  50%{left:200px;top:150px;}
+  100%{left:100px;top:350px;}
+}
+
+@keyframes movePattern {
+    0% {left:190px;top:350px;}
+    25%{left:10px;top:250px;}
+    60%{left:250px;top:150px;}
+	70% {left:350px;top:150px;}
+  100%{left:190px;top:350px;}
+}
+
+@-webkit-keyframes movePattern{
+  0% {left:190px;top:350px;}
+  25%{left:10px;top:250px;}
+  60%{left:250px;top:150px;}
+70% {left:350px;top:150px;}
+100%{left:190px;top:350px;}
+}
+
+@keyframes moveweld
+{
+  from {left:220px;top:85px;}
+	to {left:10px;top:265px;}
+}
+@-webkit-keyframes moveweld
+{
+  from {left:220px;top:85px;}
+	to {left:10px;top:265px;}
+}
+
+@keyframes movehammer {
+    0%{left:280px;top:130px;}
+    50%{left:80px;top:300px;}
+	100% {left:400px;top:275px;}
+}
+
+@-webkit-keyframes movehammer {
+  0%{left:280px;top:130px;}
+  50%{left:80px;top:300px;}
+100% {left:400px;top:275px;}
+}
+
+
+@keyframes movedial{
+    0% {
+        left:230px;top:270px;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        left:230px;top:270px;
+        transform: rotate(80deg);
+    }
+}
+@-webkit-keyframes movedial{
+
+      0% {
+          left:230px;top:270px;
+          transform: rotate(0deg);
+      }
+
+      100%{
+          left:230px;top:270px;
+          transform: rotate(80deg);
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chrome, Safari, Opera */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standard syntax */
+@keyframes water-5 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -35px);}
+}
+/* -------------------------------------- constant speed arrow ---------------------------------------- */
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow-1 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-50deg);}
+}
+
+/* Standard syntax */
+@keyframes arrow-1 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-50deg);}
+}
+/* -------------------------------------- constant speed arrow 2 ---------------------------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow-11 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(70deg);}
+}
+
+/* Standard syntax */
+@keyframes arrow-11 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(70deg);}
+}
+
+
+
+/* -------------------------------------- ---------------------------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes valveturn-2 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes valveturn-2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes valveturn-4 {
+0% {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-20deg);}
+}
+
+/* Standard syntax */
+@keyframes valveturn-4 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+
+/* Standard syntax */
+@keyframes water0 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -100px);}
+}
+
+/* Standard syntax */
+@keyframes water0 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, -100px);}
+}
+
+
+/*-----------------------------------------hook gauge----------------------- */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myhook-1 {
+0% {-webkit-transform: translate(0, 0 );}
+50% {-webkit-transform: translate(0, -15px );}
+
+100% {-webkit-transform: translate(0, 8px );}
+}
+
+/* Standard syntax */
+@keyframes myhook-1 {
+    0% {transform: translate(0, 0);}
+	50% {transform: translate(0, -15px);}
+
+
+    100% {transform: translate(0, 8px);}
+}
+
+@-webkit-keyframes myhook-2 {
+0% {-webkit-transform: translate(0, 0 );}
+50% {-webkit-transform: translate(0, -50px );}
+
+100% {-webkit-transform: translate(0, -15px );}
+}
+
+/* Standard syntax */
+@keyframes myhook-2 {
+    0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, -50px);}
+
+
+    100% {transform: translate(0, -15px);}
+}
+
+
+/*-----------------------------------------blink----------------------- */
+
+@keyframes bucketMove
+{
+	from {left:50px;top:150px;}
+	to {left:550px;top:150px;}
+}
+@-webkit-keyframes bucketMove
+{
+	from {left:50px;top:150px;}
+	to {left:550px;top:150px;}
+}
+
+@keyframes bucketScale
+{
+	from {transform: scale(1)}
+	to {transform: scale(2)}
+}
+@-webkit-keyframes bucketScale
+{
+	from {transform: scale(1)}
+	to {transform: scale(5)}
+}
+
+@keyframes bucketRotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(30deg)}
+}
+@-webkit-keyframes bucketRotate
+{
+	from {transform: rotate(0deg)}
+	to {transform: rotate(30deg)}
+}
+
+@keyframes waterMove
+{
+	0% {left:450px;top:300px;}
+	100% {left:450px;top:250px;}
+}
+@-webkit-keyframes waterMove
+{
+	0% {left:450px;top:300px;}
+	100% {left:450px;top:250px;}
+} */
